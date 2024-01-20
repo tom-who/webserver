@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/ufo.gif"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <li><p>TOM.SH</p></li>
+            <li><a href="/">HOME</a></li>
+            <li class="active"><a href="blog.html">BlOG</a></li>
+            <li><a href="whoami.html">WHOAMI</a></li>
+            <li><div class="toggle"></div></li>
+    </div>
+    <div class="line"></div>
+    <div class="line2"></div>
+        <div class="text">
+              <div class="row">
+                <div class="leftcolumn">
+                  <div class="card">
+                    <a href="https://medium.com/@tom.sh/advent-of-cyber-side-quest-1-289786908734">Advent Of Cyber</a>
+                    <p><br>My most popular medium blog, for the AoC's side quest by TryHackMe. This CTF involves a pcap file that requires some decryption, organization and brute forcing. Towards the ends we also use some open source tools to replay RDP connections!</p>
+                    <p><br>20 Jan 2024</p>
+                  </div>
+                  <div class="card">
+                    <a href="https://medium.com/@tom.sh/skynet-ctf-9303e74249ac">Skynet CTF</a>
+                    <p><br>This is another popular medium blog. This CTF involves hacking Miles Dyson form the Terminator movie series!(classic). You leverage RCE from a faulty URL parameter, brute forcing an email service and exploiting "tar" to escalate your privelleges to root!<br>*Disclaimer:This is a private TryHackMe room and requires a premium subscription*</p>
+                    <p><br>20 Jan 2024</p>
+                  </div>
+                  <div class="card">
+                    <a href="whoami.html">[~]$ whoami</a>
+                    <p><br>Just a little bit of information about me...</p>
+                    <p><br>20 Jan 2024</p>
+                  </div>
+                </div>
+                <div class="rightcolumn">
+                  <div class="card">
+                    <h3>Popular Posts:</h3>
+                    <ul>
+                      <li>Advent Of Cyber 1</li>
+                      <li>Whoami</li>
+                      <li>Skynet CTF</li>
+                    </ul>
+                  </div>
+                  <div class="card">
+                    <h3>email : slverscrpter@gmail.com</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="logo"></div>
+        </div>
+    </div>
+    <ul  class="sidebar">
+        <li><a href="https://medium.com/@tom.sh"><img src="images/medium.png" alt="Medium"></a></li>
+        <li><a href="http://tryhackme.com/p/tom.sh"><img src="images/thm.png" alt="TryHackMe"></a></li>
+        <li><a href="https://github.com/tom-who"><img src="images/gh.png" alt="GitHub"></a></li>
+    </ul>
+
+    <!-- <video src="ambience.mp3" autoplay loop></video> -->
+</body>
+<script>
+    const imageToggle = document.querySelector('.toggle')
+    const main = document.querySelector('.main')
+    
+    imageToggle.addEventListener('click', function(){
+        imageToggle.classList.toggle('active')
+        main.classList.toggle('active')
+        
+    })
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/ufo.gif"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <li><p id="intro">TOM.SH</p></li>
+            <li class="active"><a href="/">HOME</a></li>
+            <li><a href="blog.html">BlOG</a></li>
+            <li><a href="whoami.html">WHOAMI</a></li>
+            <li><div class="toggle"></div></li>
+    </div>
+    <div class="line"></div>
+        <div class="text">
+            <div class="logo"></div>
+            <div class="typewriter">
+                <h1>Hi, how are ya'</h1>
+              </div>
+        </div>
+    </div>
+    <ul  class="sidebar">
+        <li><a href="https://medium.com/@tom.sh"><img src="images/medium.png" alt="Medium"></a></li>
+        <li><a href="http://tryhackme.com/p/tom.sh"><img src="images/thm.png" alt="TryHackMe"></a></li>
+        <li><a href="https://github.com/tom-who"><img src="images/gh.png" alt="GitHub"></a></li>
+    </ul>
+</body>
+<script>
+    const imageToggle = document.querySelector('.toggle')
+    const main = document.querySelector('.main')
+    const evil = document.querySelector('.evil')
+    
+    imageToggle.addEventListener('click', function(){
+        imageToggle.classList.toggle('active')
+        main.classList.toggle('active')
+        evil.classList.toggle('active')
+    })
+</script>
+</html>
